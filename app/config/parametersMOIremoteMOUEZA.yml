@@ -1,0 +1,12 @@
+parameters:
+    database_host: mysql.hostinger.fr
+    database_port: null
+    database_name: u386024038_visit
+    database_user: u386024038_visit
+    database_password: pitza54321
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 1d9ee31768e365a7ed865e7a0246e07a7f6e2935
+

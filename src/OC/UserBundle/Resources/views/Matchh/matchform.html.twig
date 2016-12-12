@@ -1,0 +1,143 @@
+<body>
+    <h3>Saisie d'un match</h3>
+
+    <div class="well">
+        *=obligé
+    </div>
+
+    <div class="well">
+
+        {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+        {# Les erreurs générales du formulaire. #}
+        {{ form_errors(form) }}
+
+
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.beginningDate, "Date du match : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.beginningDate) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.beginningDate, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.beginningTime, "Heure de début du match : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.beginningTime) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.beginningTime, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+
+
+
+        {# Génération manuelle et éclatée : #}
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.emailone, "Joueur1=joueur qui fait la saisie du formulaire : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.emailone) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.emailone, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        {# Génération manuelle et éclatée : #}
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.emailtwo, "Joueur2 : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.emailtwo) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.emailtwo, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+
+
+        {# Génération du label + error + widget pour un champ. #}
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.score1j1, "score1j1 : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.score1j1) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.score1j1, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        {# Génération du label + error + widget pour un champ. #}
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.score1j2, "score1j2 : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.score1j2) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.score1j2, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        {# Génération du label + error + widget pour un champ. #}
+        {{ form_row(form.isScore1tie) }}
+        {# Génération du label + error + widget pour un champ. #}
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.score2j1, "score2j1 : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.score2j1) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.score2j1, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        {# Génération du label + error + widget pour un champ. #}
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.score2j2, "score2j2 : *", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            {# Affichage des erreurs pour ce champ précis. #}
+            {{ form_errors(form.score2j2) }}
+            <div class="col-sm-10">
+                {# Génération de l'input. #}
+                {{ form_widget(form.score2j2, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        {# Génération du label + error + widget pour un champ. #}
+        {{ form_row(form.isScore2tie) }}
+        {# Génération du label + error + widget pour un champ. #}
+
+        {{ form_row(form.score3j1) }}
+        {# Génération du label + error + widget pour un champ. #}
+        {{ form_row(form.score3j2) }}
+
+        {# Génération du label + error + widget pour un champ. #}
+        {{ form_row(form.isScore3tie) }}
+        {# Génération du label + error + widget pour un champ. #}
+        {{ form_row(form.endTime) }}
+
+
+        {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+        {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+
+
+        {# Génération automatique des champs pas encore écrits.
+           Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
+           et tous les champs cachés (type « hidden »). #}
+        {{ form_rest(form) }}
+
+
+        {# Fermeture de la balise <form> du formulaire HTML #}
+        {{ form_end(form) }}
+
+    </div>
+</body>

@@ -1,0 +1,22 @@
+<body>
+    <h3>Les échéances</h3>
+
+
+    <div class="well">
+        diff={{diff}}
+        <BR>     daysEps={{daysEpsDay}}
+        <BR>      Dates= 
+
+        {# {% for date in datesPERIOD %}
+         {{date}}
+         {% endfor %}#}
+
+        <BR>     dateNth={{dateNth}}
+  <BR> echeancesNbinscritsmoinsun={{echeancesNbinscritsmoinsun}}
+     {% for inscrit in inscrits %}
+         {{inscrit.username}}
+         {% endfor %}  
+  
+ <BR>  <a href='http://moueza.esy.es/m/'>Home DTC3</a>
+    </div>
+</body>

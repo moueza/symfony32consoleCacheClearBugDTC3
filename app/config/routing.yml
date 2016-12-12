@@ -1,0 +1,105 @@
+oc_platform:
+    resource: "@OCPlatformBundle/Resources/config/routing.yml"
+    prefix:   /
+
+oc_core:
+    resource: "@OCCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+oc_user:
+    resource: "@OCUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#oc_user:
+#    resource: "@OCUserBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+
+#
+#oc_platform_accueil:
+#    path:      /accueil
+#    defaults: { _controller: AppBundle:Default:accueil }
+
+    
+    
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+
+login:
+    path: /login
+    defaults:
+        _controller: OCUserBundle:Security:login
+login_check:
+    path: /login_check
+logout:
+    path: /logout
+
+
+
+
+#
+#
+#user:
+#    resource: "OC/UserBundle/OCUserBundle/Controller/InscritController.php"
+#    type:     annotation
+
+
+
+echeancs:
+    resource: "@OCUserBundle/Controller/EcheanceController.php"
+    type: annotation
+    
+    
+inscritss:
+    resource: "@OCUserBundle/Controller/InscritController.php"
+    type: annotation
+    
+    
+matchss:
+    resource: "@OCUserBundle/Controller/MatchhController.php"
+    type: annotation
+    
+    
+    
+
+    
+actualite:
+    resource: "@OCUserBundle/Controller/ActualiteController.php"
+    type: annotation
+    
+
+        
+creno:
+    resource: "@OCUserBundle/Controller/CrenoController.php"
+    type: annotation
+    
+        
+     
+forum:
+    resource: "@OCUserBundle/Controller/ForumController.php"
+    type: annotation
+    
+   
+messagerieexterne:
+    resource: "@OCUserBundle/Controller/MessagerieexterneController.php"
+    type: annotation
+   
+messagerieinterne:
+    resource: "@OCUserBundle/Controller/MessagerieinterneController.php"
+    type: annotation
+   
+statistiques:
+    resource: "@OCUserBundle/Controller/StatistiquesController.php"
+    type: annotation
+               
+               
+               
+menu:
+    resource: "@OCPlatformBundle/Controller/AdvertController.php"
+    type: annotation
+    
+               

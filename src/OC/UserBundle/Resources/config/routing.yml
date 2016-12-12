@@ -1,0 +1,17 @@
+echeances:
+    path:       /echeances2
+    defaults: { _controller: OCUserBundle:Misc:echeances2 }
+    
+     
+   
+login:
+    path:       /login
+    defaults: { _controller: OCUserBundle:Security:login }
+    
+
+login_check:
+    path: /login_check
+
+
+logout:
+    path: /logout

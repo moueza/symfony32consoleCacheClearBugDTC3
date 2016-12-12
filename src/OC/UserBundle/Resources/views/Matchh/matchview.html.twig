@@ -1,0 +1,44 @@
+
+<h3>Confirmation du match</h3>
+
+
+<div class="well">
+    Match enregistré
+
+    {{match.emailone}}
+    {{match.emailtwo}}
+
+    {{match.beginningDate|date('d:m:Y')}}
+    <BR>
+    {{match.beginningTime|date('H:i:s')}}
+    <BR>
+    {#match.joueur1}}  VS  {{match.joueur2#} 
+    <BR>
+    {{match.score1j1}}  {{match.score1j2}} 
+    {% if match.isScore1tie%}
+        Tie
+    {% else %}
+        Non tie
+    {% endif %}
+
+    <BR>
+
+    {{match.score2j1}}  {{match.score2j2}} 
+    {% if match.isScore2tie %}
+        Tie
+    {% else %}
+        Non tie
+    {% endif %}
+
+    <BR>
+
+    {{ match.score3j1}}  {{match.score3j2}}
+    {% if match.isScore3tie %}
+        Tie
+    {% else %}
+        Non tie
+    {% endif %}
+    <BR>
+
+    <a href='http://moueza.esy.es/m/'>OK</a>
+</div>

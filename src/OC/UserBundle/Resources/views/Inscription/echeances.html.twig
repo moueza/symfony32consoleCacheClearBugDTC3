@@ -1,0 +1,41 @@
+
+{% extends "OCPlatformBundle:Default:layout.html.twig" %}
+
+
+
+
+{% block body %}
+
+
+    <h1>Les échéances</h1>
+
+
+    <div class="well">
+        <h2>Obligatoires</h2>
+        <p>Les échéances obligatoire L, L étant une lettre obligatoire, sont les dates au bout desquelles les matchs doivent être joués, 
+            <b>sous peine d'être éliminé</b>.
+            <BR>L'échéance L demande à ce que L matchs aient été joués avant cette date comprise, L ième lettre de l'alphabet
+            <BR>Donc, par exemple, échéance B veut dire que 2 matchs doivent être joués.</p>
+
+        <p>Échéance obligatoire A = 25/12/2016</p>
+    </div>
+
+
+    <div class="well">
+        <h2>Facultatives</h2>
+        <p>Les échéances facultatives N, n étant un nombre, sont les dates au bout desquelles les matchs doivent être joués, pour jouer le plus <b>régulièrement</b> possible
+            <BR>L'échéance n demande à ce que n matchs aient été joués avant cette date comprise.
+            <BR>Donc, par exemple, échéance 3 veut dire que 3 matchs doivent être joués.</p>
+
+        <p>À 17, 153 jours à partir du 11/12/2016, pour plus que 15 matchs, 10.2 jours par match</p>
+
+        <p>Échéance facultative 1 = 11/12/2016
+            <BR>Échéance facultative 2 = 21/12/2016</p>
+
+    </div>
+
+
+
+{% endblock %}
+
+

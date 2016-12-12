@@ -1,0 +1,25 @@
+
+{% extends "OCPlatformBundle:Default:layout.html.twig" %}
+
+
+
+{% block body %}
+
+    <h3>Les inscrits</h3>
+
+
+    <div class="well">
+        Participent :
+
+        <ul>
+            {% for inscrit in listInscrits %}
+                <li>{{loop.index}}) {{inscrit.username}} {{inscrit.email}}</li>
+                {% endfor %}
+        </ul>
+
+
+        <a href='http://moueza.esy.es/m/'>Home DTC3</a>
+    </div>
+
+{% endblock %}
+
