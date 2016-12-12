@@ -1,2 +1,3 @@
-66fc34,127.0.0.1,POST,http://localhost/symfony32consoleCacheClearBugDTC3/web/app_dev.php/_console/commands,1481566266,,200
-1deb3a,127.0.0.1,GET,http://localhost/symfony32consoleCacheClearBugDTC3/web/app_dev.php/_console,1481569404,,200
+90745e,127.0.0.1,GET,http://localhost/symfony32consoleCacheClearBugDTC3/web/app_dev.php/_console,1481571624,,200
+a7e4ae,127.0.0.1,GET,http://localhost/symfony32consoleCacheClearBugDTC3/web/app_dev.php/_console/commands,1481571663,62b9b1,200
+62b9b1,127.0.0.1,POST,http://localhost/symfony32consoleCacheClearBugDTC3/web/app_dev.php/_console/commands,1481571663,,500

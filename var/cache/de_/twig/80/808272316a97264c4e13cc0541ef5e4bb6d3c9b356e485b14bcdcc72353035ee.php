@@ -15,11 +15,11 @@ class __TwigTemplate_00b9f6bb0bfe3c166a43649ad77555aa3ee7854a5ae2cdd06c05c291fad
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_243c25b624fa928da0e3022bccefb5c9a413fe32de6c00ddf670a63e8559aa01 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_243c25b624fa928da0e3022bccefb5c9a413fe32de6c00ddf670a63e8559aa01->enter($__internal_243c25b624fa928da0e3022bccefb5c9a413fe32de6c00ddf670a63e8559aa01_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CoreSphereConsole/Console/htmlTemplates.html.twig"));
+        $__internal_823f0f921a193287c697a2da1145e8553af7f064f12eb71052bd1cc7c71e8449 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_823f0f921a193287c697a2da1145e8553af7f064f12eb71052bd1cc7c71e8449->enter($__internal_823f0f921a193287c697a2da1145e8553af7f064f12eb71052bd1cc7c71e8449_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CoreSphereConsole/Console/htmlTemplates.html.twig"));
 
-        $__internal_3acb87c6bc5ce352f9a6d88ec7998858b8144cff042fc91e48309d9ab1547d42 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3acb87c6bc5ce352f9a6d88ec7998858b8144cff042fc91e48309d9ab1547d42->enter($__internal_3acb87c6bc5ce352f9a6d88ec7998858b8144cff042fc91e48309d9ab1547d42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CoreSphereConsole/Console/htmlTemplates.html.twig"));
+        $__internal_79cb069bdd62de656bd0a4e5cdbfc8d45c0d4136c77cce09a6d47ef5d26ef406 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_79cb069bdd62de656bd0a4e5cdbfc8d45c0d4136c77cce09a6d47ef5d26ef406->enter($__internal_79cb069bdd62de656bd0a4e5cdbfc8d45c0d4136c77cce09a6d47ef5d26ef406_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CoreSphereConsole/Console/htmlTemplates.html.twig"));
 
         // line 1
         echo "<script type=\"text/html\" id=\"template_console_command\">
@@ -65,10 +65,10 @@ class __TwigTemplate_00b9f6bb0bfe3c166a43649ad77555aa3ee7854a5ae2cdd06c05c291fad
 </script>
 ";
         
-        $__internal_243c25b624fa928da0e3022bccefb5c9a413fe32de6c00ddf670a63e8559aa01->leave($__internal_243c25b624fa928da0e3022bccefb5c9a413fe32de6c00ddf670a63e8559aa01_prof);
+        $__internal_823f0f921a193287c697a2da1145e8553af7f064f12eb71052bd1cc7c71e8449->leave($__internal_823f0f921a193287c697a2da1145e8553af7f064f12eb71052bd1cc7c71e8449_prof);
 
         
-        $__internal_3acb87c6bc5ce352f9a6d88ec7998858b8144cff042fc91e48309d9ab1547d42->leave($__internal_3acb87c6bc5ce352f9a6d88ec7998858b8144cff042fc91e48309d9ab1547d42_prof);
+        $__internal_79cb069bdd62de656bd0a4e5cdbfc8d45c0d4136c77cce09a6d47ef5d26ef406->leave($__internal_79cb069bdd62de656bd0a4e5cdbfc8d45c0d4136c77cce09a6d47ef5d26ef406_prof);
 
     }
 
