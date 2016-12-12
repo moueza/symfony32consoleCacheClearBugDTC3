@@ -1,0 +1,1 @@
+# symfony32consoleCacheClearBugDTC3
